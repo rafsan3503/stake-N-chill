@@ -20,7 +20,6 @@ header
 }
 header .logo
 {
-  color: #fff;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -51,7 +50,7 @@ header .logo
   min-height: 100vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: #111;
   transition: 0.5s;
@@ -71,6 +70,12 @@ header .logo
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
+}
+
+.banner-img{
+  z-index: 1200;
+  width: 500px;
+  display: flex;
 }
 .overlay
 {
@@ -146,11 +151,15 @@ header .logo
 .social li a
 {
   display: inline-block;
+  font-size: 50px;
+  color: orange;
   margin-right: 20px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
+
+
 .social li a:hover
 {
   transform: scale(0.5) translateY(-15px);
