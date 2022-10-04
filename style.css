@@ -1,5 +1,7 @@
 body{
-  background-image: url(images/cloud\ gif.gif);
+  /* background-image: url(images/cloud\ gif.gif);
+   */
+   background-color: red;
   background-size: cover;
   background-repeat: no-repeat;
 }
