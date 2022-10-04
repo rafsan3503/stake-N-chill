@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily:{
+            Peralta:["'Peralta', cursive"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-Peralta">
+   <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+      <h2 class="logo">stakeNchill</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="images/stakeNchill.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li>
+        <label for="my-modal-5">Home</label>
+      </li>
+      <li>
+        <label for="my-modal-5">Overview</label>
+      </li>
+      <li>
+        <label for="my-modal-5">Tokenomics</label>
+      </li>
+      <li>
+        <label for="my-modal-5">Roadmap</label>
+      </li>
+      <li>
+        <label for="my-modal-5">About us</label>
+      </li>
+    </ul>
+  </div>
+
+  <!-- modal section  -->
+  <!-- The button to open modal -->
+
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <div class="modal-action">
+      <label for="my-modal-5" class="btn">Yay!</label>
+    </div>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
