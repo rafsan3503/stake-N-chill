@@ -1,7 +1,5 @@
-const menuToggle = document.querySelector(".toggle");
-const showcase = document.querySelector(".showcase");
+const imgContainer = document.getElementById("img-container");
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  showcase.classList.toggle("active");
+document.getElementById("tokenomics").addEventListener('click', () => {
+  imgContainer.setAttribute("src", "images/crab_PNG45.png");
 });
