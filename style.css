@@ -1,9 +1,9 @@
 body{
-  /* background-image: url(images/cloud\ gif.gif);
-   */
-   background-color: red;
+  background-image: url(images/cloud\ gif.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* .menu-list li{
