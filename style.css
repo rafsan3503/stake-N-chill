@@ -4,10 +4,10 @@ body{
   background-repeat: no-repeat;
 }
 
-/* .menu-list li{
-  list-style: none;
-  position: absolute;
-  transform: rotate(calc(360deg / -8 * var(--i)));
-  transform-origin: 200px;
-  left: 30%;
-} */
+.tokenomics{
+  background-image: url(images/pngwing.com.png);
+  /* background-color: red; */
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}

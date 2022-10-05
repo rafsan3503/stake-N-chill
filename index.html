@@ -41,34 +41,39 @@
     <li style="--i:6;">7</li>
     <li style="--i:7;">8</li> -->
 
-    <div class="lg:absolute top-10 right-20 flex items-center">
-      <img class="w-60" src="images/pngwing.com.png" alt="">
-    <label onmouseover="showTokenomics()" for="tokenomics" class="absolute lg:right-14 cursor-pointer">Tokenomics</label>
+    <div class="tokenomics flex justify-center items-center lg:absolute top-10 right-20">
+      <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
+    <label onmouseover="showTokenomics()" for="tokenomics" class="cursor-pointer">Tokenomics</label>
     </div>
 
-    <div class="lg:absolute top-10 left-20 flex items-center">
-      <img class="w-60" src="images/pngwing.com.png" alt="">
-    <label onmouseover="showOverview()" for="overview" class="absolute lg:right-14 cursor-pointer">Overview</label>
+    <div class="tokenomics flex justify-center items-center lg:absolute top-10 left-20">
+    <label onmouseover="showOverview()" for="overview" class="cursor-pointer">Overview</label>
     </div>
 
-    <div class="lg:absolute bottom-10 left-20 flex items-center">
-      <img class="w-60" src="images/pngwing.com.png" alt="">
-    <label onmouseover="showRoadmap()" for="roadmap" class="absolute lg:right-14 cursor-pointer">Roadmap</label>
+    <div class="tokenomics flex justify-center items-center lg:absolute bottom-10 left-20">
+      <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
+    <label onmouseover="showRoadmap()" for="roadmap" class="cursor-pointer">Roadmap</label>
     </div>
 
-    <div class="lg:absolute bottom-10 right-20 flex items-center">
-      <img class="w-60" src="images/pngwing.com.png" alt="">
+    <div class="tokenomics flex justify-center items-center lg:absolute bottom-10 right-20">
+      <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <!-- <p class="absolute right-14 cursor-pointer">Team</p> -->
-    <label onmouseover="showTeam()" for="my-modal-5" class="absolute lg:right-14 cursor-pointer">Team</label>
+    <label onmouseover="showTeam()" for="my-modal-5" class="cursor-pointer">Team</label>
     </div>
   </div>
+
+  <footer class="w-full flex justify-center items-center gap-5">
+    <a href="https://t.me/StakeNChillChat" target="_blank"><img class="w-8" src="images/telegram-logo-944.png" alt=""></a>
+    <a href="https://www.dextools.io/app/bsc/pair-explorer/0x1C2e2183fc39eBf24A617622dFa43119f01e3Be1" target="_blank"><img class="w-8" src="images/dextools.svg" alt=""></a>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x2D685b00E649510C75918506F4a3618A14cdB48f" target="_blank"><img class="w-8" src="images/bunny-color.png" alt=""></a>
+  </footer>
 
   <!-- modal -->
 
   <!-- The button to open modal -->
 
 
-<!-- Put this part before </body> tag -->
+<!-- Put this part before </body>
 <!-- tokenomics modal  -->
 <input type="checkbox" id="tokenomics" class="modal-toggle" />
 <label for="tokenomics" class="modal cursor-pointer">
