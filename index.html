@@ -10,9 +10,9 @@
 
   <!-- google font  -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">   
 
     <script src="https://kit.fontawesome.com/22f7957471.js" crossorigin="anonymous"></script>
   <script>
@@ -20,14 +20,14 @@
       theme: {
         extend: {
           fontFamily:{
-            Peralta:["'Peralta', cursive"]
+            Bungee:["'Bungee Spice', cursive"]
           }
         }
       }
     }
   </script>
 </head>
-<body class="font-Peralta">
+<body class="font-Bungee">
   <div class="rounded-menu w-full min-h-screen flex justify-center flex-col items-center menu-list">
     <h1 class="text-5xl text-center my-5 font-bold">Stake N Chill</h1>
     <img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">
@@ -41,25 +41,25 @@
     <li style="--i:6;">7</li>
     <li style="--i:7;">8</li> -->
 
-    <div class="absolute top-10 right-20 flex items-center">
+    <div class="lg:absolute top-10 right-20 flex items-center">
       <img class="w-60" src="images/pngwing.com.png" alt="">
-    <p id="tokenomics" class="absolute right-14 cursor-pointer">Tokenomics</p>
+    <label onmouseover="showTokenomics()" for="tokenomics" class="absolute lg:right-14 cursor-pointer">Tokenomics</label>
     </div>
 
-    <div class="absolute top-10 left-20 flex items-center">
+    <div class="lg:absolute top-10 left-20 flex items-center">
       <img class="w-60" src="images/pngwing.com.png" alt="">
-    <p id="tokenomics" class="absolute right-14 cursor-pointer">Overview</p>
+    <label onmouseover="showOverview()" for="overview" class="absolute lg:right-14 cursor-pointer">Overview</label>
     </div>
 
-    <div class="absolute bottom-10 left-20 flex items-center">
+    <div class="lg:absolute bottom-10 left-20 flex items-center">
       <img class="w-60" src="images/pngwing.com.png" alt="">
-    <p id="tokenomics" class="absolute right-14 cursor-pointer">Roadmap</p>
+    <label onmouseover="showRoadmap()" for="roadmap" class="absolute lg:right-14 cursor-pointer">Roadmap</label>
     </div>
 
-    <div class="absolute bottom-10 right-20 flex items-center">
+    <div class="lg:absolute bottom-10 right-20 flex items-center">
       <img class="w-60" src="images/pngwing.com.png" alt="">
     <!-- <p class="absolute right-14 cursor-pointer">Team</p> -->
-    <label for="my-modal-5" class="absolute right-14 cursor-pointer">Team</label>
+    <label onmouseover="showTeam()" for="my-modal-5" class="absolute lg:right-14 cursor-pointer">Team</label>
     </div>
   </div>
 
@@ -69,18 +69,38 @@
 
 
 <!-- Put this part before </body> tag -->
-<input type="checkbox" id="my-modal-5" class="modal-toggle" />
-<div class="modal">
-  <div class="modal-box w-11/12 max-w-5xl">
-    <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-    <div class="modal-action">
-      <label for="my-modal-5" class="btn">Yay!</label>
-    </div>
-  </div>
-</div>
-  
+<!-- tokenomics modal  -->
+<input type="checkbox" id="tokenomics" class="modal-toggle" />
+<label for="tokenomics" class="modal cursor-pointer">
+  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
+    <img class="w-full p-10" src="images/crab_PNG45.png" alt="">
+  </label>
+</label>
 
+<!-- Overview modal  -->
+  <input type="checkbox" id="overview" class="modal-toggle" />
+<label for="overview" class="modal cursor-pointer">
+  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
+    <img class="w-full p-10" src="images/umbrella_PNG69214.png" alt="">
+  </label>
+</label>
+
+<!-- roadmap modal  -->
+
+  <input type="checkbox" id="roadmap" class="modal-toggle" />
+<label for="roadmap" class="modal cursor-pointer">
+  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
+    <img class="w-full p-10" src="images/beach_PNG3.png" alt="">
+  </label>
+</label>
+
+<!-- team modal  -->
+<input type="checkbox" id="team" class="modal-toggle" />
+<label for="team" class="modal cursor-pointer">
+  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
+    <img class="w-full p-10" src="images/1_5035376983035347618.png" alt="">
+  </label>
+</label>
   <script src="main.js"></script>
 </body>
 </html>
