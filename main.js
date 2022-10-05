@@ -2,7 +2,17 @@ const imgContainer = document.getElementById("img-container");
 const modal = document.getElementById("my-modal-5");
 const header = document.getElementById('header');
 const container = document.getElementById('container');
-console.log(container.innerHTML)
+console.log(container.innerHTML);
+
+document.getElementById('home').addEventListener('click', () => {
+  container.innerHTML = `<img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">`;
+  header.innerText = '';
+})
+
+document.getElementById("home").addEventListener('mouseover', () => {
+  container.innerHTML = `<img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">`;
+  header.innerText = "";
+});
 
 document.getElementById("tokenomics").addEventListener('click', () => {
   imgContainer.setAttribute("src", "images/crab_PNG45.png");
