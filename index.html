@@ -29,7 +29,7 @@
 </head>
 <body class="font-Bungee">
   <div class="rounded-menu w-full min-h-screen flex justify-center flex-col items-center menu-list">
-    <h1 class="text-5xl text-center my-5 font-bold">Stake N Chill</h1>
+    <h1 id="header" class="text-5xl text-center my-5 font-bold">Stake N Chill</h1>
     <img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">
 
     <!-- <li style="--i:0;">1</li>
@@ -41,21 +41,21 @@
     <li style="--i:6;">7</li>
     <li style="--i:7;">8</li> -->
 
-    <div class="tokenomics flex justify-center items-center lg:absolute top-10 right-20">
+    <div id="tokenomics" class="tokenomics flex justify-center items-center lg:absolute top-10 right-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <label onmouseover="showTokenomics()" for="tokenomics" class="cursor-pointer">Tokenomics</label>
     </div>
 
-    <div class="tokenomics flex justify-center items-center lg:absolute top-10 left-20">
+    <div id="overview" class="tokenomics flex justify-center items-center lg:absolute top-10 left-20">
     <label onmouseover="showOverview()" for="overview" class="cursor-pointer">Overview</label>
     </div>
 
-    <div class="tokenomics flex justify-center items-center lg:absolute bottom-10 left-20">
+    <div id="roadmap" class="tokenomics flex justify-center items-center lg:absolute bottom-10 left-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <label onmouseover="showRoadmap()" for="roadmap" class="cursor-pointer">Roadmap</label>
     </div>
 
-    <div class="tokenomics flex justify-center items-center lg:absolute bottom-10 right-20">
+    <div id="team" class="tokenomics flex justify-center items-center lg:absolute bottom-10 right-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <!-- <p class="absolute right-14 cursor-pointer">Team</p> -->
     <label onmouseover="showTeam()" for="my-modal-5" class="cursor-pointer">Team</label>
@@ -75,7 +75,7 @@
 
 <!-- Put this part before </body>
 <!-- tokenomics modal  -->
-<input type="checkbox" id="tokenomics" class="modal-toggle" />
+<input type="checkbox" class="modal-toggle" />
 <label for="tokenomics" class="modal cursor-pointer">
   <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
     <img class="w-full p-10" src="images/crab_PNG45.png" alt="">
@@ -83,7 +83,7 @@
 </label>
 
 <!-- Overview modal  -->
-  <input type="checkbox" id="overview" class="modal-toggle" />
+  <input type="checkbox"  class="modal-toggle" />
 <label for="overview" class="modal cursor-pointer">
   <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
     <img class="w-full p-10" src="images/umbrella_PNG69214.png" alt="">
@@ -92,7 +92,7 @@
 
 <!-- roadmap modal  -->
 
-  <input type="checkbox" id="roadmap" class="modal-toggle" />
+  <input type="checkbox" class="modal-toggle" />
 <label for="roadmap" class="modal cursor-pointer">
   <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
     <img class="w-full p-10" src="images/beach_PNG3.png" alt="">
@@ -100,7 +100,7 @@
 </label>
 
 <!-- team modal  -->
-<input type="checkbox" id="team" class="modal-toggle" />
+<input type="checkbox" class="modal-toggle" />
 <label for="team" class="modal cursor-pointer">
   <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
     <img class="w-full p-10" src="images/1_5035376983035347618.png" alt="">
