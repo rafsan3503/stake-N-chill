@@ -125,10 +125,10 @@ document.getElementById("team-mbl").addEventListener("click", () => {
 
 const showTokenomics = () => {
   // document.getElementById("tokenomics").checked = true;
-  imgContainer.setAttribute("src", "images/crab_PNG45.png");
+  // imgContainer.setAttribute("src", "images/crab_PNG45.png");
   // header.innerText = "Tokenomics";
-  container.innerHTML = `<section id="tokenomics" class="mt-20 text-center w-full mx-auto">
-     <section class="mt-[50px] text-center">
+  container.innerHTML = `<section id="tokenomics" class="text-center w-full mx-auto">
+     <section class="text-center">
         <div class="lg:flex lg:divide-x-2 shadow">
         <div class="stat">
             <div class="stat-title">Total Supply</div>
@@ -202,7 +202,7 @@ const showRoadmap = () => {
   container.innerHTML = `
   <section id="roadmap" class="w-9/12 mx-auto">
     <div class="flex w-full">
-    <div class="p-5">Coming Soon...</div>
+    <div class="p-5 text-5xl font-bold">Coming Soon...</div>
     </div>
     </section>
   `;
@@ -214,7 +214,7 @@ const showTeam = () => {
   // header.innerText = "Team";
   container.innerHTML = `
   <section>
-        <div class='w-1/2 mx-auto'>
+        <div class='w-96 mx-auto'>
             <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
                         <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg"
                                 alt="Shoes" /></figure>
