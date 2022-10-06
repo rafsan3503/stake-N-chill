@@ -1,22 +1,22 @@
 const imgContainer = document.getElementById("img-container");
 const modal = document.getElementById("my-modal-5");
-const header = document.getElementById('header');
+// const header = document.getElementById('header');
 const container = document.getElementById('container');
 console.log(container.innerHTML);
 
 document.getElementById('home').addEventListener('click', () => {
   container.innerHTML = `<img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">`;
-  header.innerText = '';
+  // header.innerText = '';
 })
 
 document.getElementById("home").addEventListener('mouseover', () => {
   container.innerHTML = `<img class="w-96" id="img-container" src="images/1_5035376983035347618.png" alt="">`;
-  header.innerText = "";
+  // header.innerText = "";
 });
 
 document.getElementById("tokenomics").addEventListener('click', () => {
   imgContainer.setAttribute("src", "images/crab_PNG45.png");
-  header.innerText = 'Tokenomics';
+  // header.innerText = 'Tokenomics';
   container.innerHTML = `<section id="tokenomics" class="mt-20 text-center w-full mx-auto">
      <section class="mt-[50px] text-center">
         <div class="lg:flex lg:divide-x-2 shadow">
@@ -25,28 +25,24 @@ document.getElementById("tokenomics").addEventListener('click', () => {
             <div class="stat-value">1M</div>
         </div>
         
-        <div class="stat">
-            <div class="stat-title">Current Burned</div>
-            <div class="stat-value">31%</div>
-        </div>
         
         <div class="stat">
             <div class="stat-title">Total Holders</div>
-            <div class="stat-value">50+</div>
+            <div class="stat-value">~500</div>
         </div>
         
         </div>
     </section> 
-    <div class="lg:flex tokenomics lg:divide-x-2 shadow glass mt-10">
+    <div class="lg:flex lg:divide-x-2 shadow glass mt-10">
       
       <div class="stat">
-        <div class="stat-title">Marketing</div>
+        <div class="stat-title">Cake rewards</div>
         <div class="stat-value text-primary">8%</div>
       </div>
 
       <div class="stat">
-        <div class="stat-title">Stake n Chill Rewards</div>
-        <div class="stat-value text-primary">3%</div>
+        <div class="stat-title">Marketing</div>
+        <div class="stat-value text-primary">4%</div>
       </div>
 
       <div class="stat">
@@ -67,38 +63,17 @@ document.getElementById("tokenomics").addEventListener('click', () => {
 
 document.getElementById("overview").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/umbrella_PNG69214.png");
-  header.innerText = "Overview";
+  // header.innerText = "Overview";
   container.innerHTML = `
   <section>
         <div class="text-center">
         </div>
-        <div class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-2 mt-10 gap-5">
+        <div class="w-1/2 mx-auto">
             <div class="card glass">
             <div class="card-body">
-            <h2 class="card-title">Safe Team</h2>
-            <p>History of successful projects.</p>
+            <p>Stake N Chill is about providing long term investors with a place to earn passive rewards in CAKE which they can stake for a high APY! You may say “all rewards tokens die” or “there will be no volume”! Our solution includes hiring and paying devs to run degens which will have high rewards (2-3%+) in Stake n Chill which will continue to add volume, add holders, and most importantly bring green to the chart as some holders will have less than it costs for gas so the circulating supply will dip over time</p>
             </div>
             </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Experienced Marketer</h2>
-            <p>Many Connection in BSC.</p>
-            </div>
-            </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Betting Meta</h2>
-            <p>Riding the wave of hype.</p>
-            </div>
-            </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Live Casino Time</h2>
-            <p>Daily Rounds of blackjack are invested into the chart.</p>
-            </div>
-            </div>
-            
-  
         </div>
         
         
@@ -111,7 +86,7 @@ document.getElementById("overview").addEventListener("click", () => {
 
 document.getElementById("roadmap").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/beach_PNG3.png");
-  header.innerText = "Roadmap";
+  // header.innerText = "Roadmap";
   container.innerHTML = `
   <section id="roadmap" class="mt-[100px] w-9/12 mx-auto">
     <div class="flex w-full mt-10">
@@ -123,53 +98,26 @@ document.getElementById("roadmap").addEventListener("click", () => {
 
 document.getElementById("team").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/1_5035376983035347618.png");
-  header.innerText = 'Team';
+  // header.innerText = 'Developer';
   container.innerHTML = `
   <section>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full mt-5">
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
+        <div class='w-1/2 mx-auto'>
+            <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                        <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg"
+                                alt="Shoes" /></figure>
+                        <div class="card-body text-left">
+                            <h2 class="text-violet-700 text-3xl font-bold text-bold">Chase Franz</h2>
+                            <p class="text-white font-medium">Developer</p>
+                            <p class="mt-5 text-lg text-white">I have worked in cryptocurrency for five years, beginning in
+                                mining. My main skill set lies in social media marketing
+                                which I have operated my business for three years. Within the last six months, I have developed
+                                a large network within
+                                crypto and continue to hone my marketing abilities in this space.</p>
+                            <div class="card-actions">
+                                <i class="fa-brands fa-linkedin text-3xl text-violet-700"></i>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </section>
   `;
@@ -178,7 +126,7 @@ document.getElementById("team").addEventListener("click", () => {
 const showTokenomics = () => {
   // document.getElementById("tokenomics").checked = true;
   imgContainer.setAttribute("src", "images/crab_PNG45.png");
-  header.innerText = "Tokenomics";
+  // header.innerText = "Tokenomics";
   container.innerHTML = `<section id="tokenomics" class="mt-20 text-center w-full mx-auto">
      <section class="mt-[50px] text-center">
         <div class="lg:flex lg:divide-x-2 shadow">
@@ -187,28 +135,24 @@ const showTokenomics = () => {
             <div class="stat-value">1M</div>
         </div>
         
-        <div class="stat">
-            <div class="stat-title">Current Burned</div>
-            <div class="stat-value">31%</div>
-        </div>
         
         <div class="stat">
             <div class="stat-title">Total Holders</div>
-            <div class="stat-value">50+</div>
+            <div class="stat-value">~500</div>
         </div>
         
         </div>
     </section> 
-    <div class="lg:flex tokenomics lg:divide-x-2 shadow glass mt-10">
+    <div class="lg:flex lg:divide-x-2 shadow glass mt-10">
       
       <div class="stat">
-        <div class="stat-title">Marketing</div>
+        <div class="stat-title">Cake rewards</div>
         <div class="stat-value text-primary">8%</div>
       </div>
 
       <div class="stat">
-        <div class="stat-title">Stake n Chill Rewards</div>
-        <div class="stat-value text-primary">3%</div>
+        <div class="stat-title">Marketing</div>
+        <div class="stat-value text-primary">4%</div>
       </div>
 
       <div class="stat">
@@ -230,38 +174,17 @@ const showTokenomics = () => {
 const showOverview = () => {
   // document.getElementById('overview').checked = true;
   imgContainer.setAttribute("src", "images/beach_PNG3.png");
-  header.innerText = "Overview";
+  // header.innerText = "Overview";
   container.innerHTML = `
   <section>
         <div class="text-center">
         </div>
-        <div class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-2 mt-10 gap-5">
+        <div class="w-1/2 mx-auto">
             <div class="card glass">
             <div class="card-body">
-            <h2 class="card-title">Safe Team</h2>
-            <p>History of successful projects.</p>
+            <p>Stake N Chill is about providing long term investors with a place to earn passive rewards in CAKE which they can stake for a high APY! You may say “all rewards tokens die” or “there will be no volume”! Our solution includes hiring and paying devs to run degens which will have high rewards (2-3%+) in Stake n Chill which will continue to add volume, add holders, and most importantly bring green to the chart as some holders will have less than it costs for gas so the circulating supply will dip over time</p>
             </div>
             </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Experienced Marketer</h2>
-            <p>Many Connection in BSC.</p>
-            </div>
-            </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Betting Meta</h2>
-            <p>Riding the wave of hype.</p>
-            </div>
-            </div>
-            <div class="card glass">
-            <div class="card-body">
-            <h2 class="card-title">Live Casino Time</h2>
-            <p>Daily Rounds of blackjack are invested into the chart.</p>
-            </div>
-            </div>
-            
-  
         </div>
         
         
@@ -275,7 +198,7 @@ const showOverview = () => {
 const showRoadmap = () => {
   // document.getElementById("roadmap").checked = true;
   imgContainer.setAttribute("src", "images/umbrella_PNG69214.png");
-  header.innerText = "Roadmap";
+  // header.innerText = "Roadmap";
   container.innerHTML = `
   <section id="roadmap" class="mt-[100px] w-9/12 mx-auto">
     <div class="flex w-full mt-10">
@@ -288,53 +211,26 @@ const showRoadmap = () => {
 const showTeam = () => {
   // document.getElementById('team').checked = true;
   imgContainer.setAttribute("src", "images/1_5035376983035347618.png");
-  header.innerText = "Team";
+  // header.innerText = "Team";
   container.innerHTML = `
   <section>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full mt-5">
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
-
-            <div class="rounded-xl overflow-hidden shadow-xl glass">
-            <img class='w-full' src="https://placeimg.com/400/225/arch" alt="Shoes"/>
-            <div class="card-body items-center text-center">
-            <h2 class="card-title">Mr.X</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="card-actions">
-            <button class="btn btn-outline">contact now</button>
-            </div>
-            </div>
-            </div>
+        <div class='w-1/2 mx-auto'>
+            <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
+                        <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg"
+                                alt="Shoes" /></figure>
+                        <div class="card-body text-left">
+                            <h2 class="text-violet-700 text-3xl font-bold text-bold">Chase Franz</h2>
+                            <p class="text-white font-medium">Developer</p>
+                            <p class="mt-5 text-lg text-white">I have worked in cryptocurrency for five years, beginning in
+                                mining. My main skill set lies in social media marketing
+                                which I have operated my business for three years. Within the last six months, I have developed
+                                a large network within
+                                crypto and continue to hone my marketing abilities in this space.</p>
+                            <div class="card-actions">
+                                <i class="fa-brands fa-linkedin text-3xl text-violet-700"></i>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </section>
   `;
