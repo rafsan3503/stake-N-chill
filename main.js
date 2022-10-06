@@ -14,7 +14,7 @@ document.getElementById("home").addEventListener('mouseover', () => {
   // header.innerText = "";
 });
 
-document.getElementById("tokenomics").addEventListener('click', () => {
+document.getElementById("tokenomics-mbl").addEventListener('click', () => {
   imgContainer.setAttribute("src", "images/crab_PNG45.png");
   // header.innerText = 'Tokenomics';
   container.innerHTML = `<section id="tokenomics" class="mt-20 text-center w-full mx-auto">
@@ -61,14 +61,14 @@ document.getElementById("tokenomics").addEventListener('click', () => {
     </section>`;
 });
 
-document.getElementById("overview").addEventListener("click", () => {
+document.getElementById("overview-mbl").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/umbrella_PNG69214.png");
   // header.innerText = "Overview";
   container.innerHTML = `
   <section>
         <div class="text-center">
         </div>
-        <div class="w-1/2 mx-auto">
+        <div class="w-11/12 mx-auto">
             <div class="card glass">
             <div class="card-body">
             <p>Stake N Chill is about providing long term investors with a place to earn passive rewards in CAKE which they can stake for a high APY! You may say “all rewards tokens die” or “there will be no volume”! Our solution includes hiring and paying devs to run degens which will have high rewards (2-3%+) in Stake n Chill which will continue to add volume, add holders, and most importantly bring green to the chart as some holders will have less than it costs for gas so the circulating supply will dip over time</p>
@@ -84,7 +84,7 @@ document.getElementById("overview").addEventListener("click", () => {
   `;
 });
 
-document.getElementById("roadmap").addEventListener("click", () => {
+document.getElementById("roadmap-mbl").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/beach_PNG3.png");
   // header.innerText = "Roadmap";
   container.innerHTML = `
@@ -96,12 +96,12 @@ document.getElementById("roadmap").addEventListener("click", () => {
   `;
 });
 
-document.getElementById("team").addEventListener("click", () => {
+document.getElementById("team-mbl").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/1_5035376983035347618.png");
   // header.innerText = 'Developer';
   container.innerHTML = `
   <section>
-        <div class='w-1/2 mx-auto'>
+        <div class='w-11/12 mx-auto'>
             <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
                         <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg"
                                 alt="Shoes" /></figure>

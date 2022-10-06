@@ -29,6 +29,15 @@
 </head>
 <body class="font-Bungee max-w-[1300px] mx-auto">
   <h1 id="home" class="text-5xl text-center font-bold pt-5">Stake N Chill</h1>
+
+  <div class="mt-3 md:hidden">
+    <footer class="w-full flex justify-center items-center gap-5">
+    <a href="https://t.me/StakeNChillChat" target="_blank"><img class="w-8" src="images/telegram-logo-944.png" alt=""></a>
+    <a href="https://www.dextools.io/app/bsc/pair-explorer/0x1C2e2183fc39eBf24A617622dFa43119f01e3Be1" target="_blank"><img class="w-8" src="images/dextools.svg" alt=""></a>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x2D685b00E649510C75918506F4a3618A14cdB48f" target="_blank"><img class="w-8" src="images/bunny-color.png" alt=""></a>
+    <a href=""><img src="images/" alt=""></a>
+  </footer>
+  </div>
   <div class="rounded-menu w-full min-h-screen flex justify-center flex-col items-center menu-list relative">
     <h1 id="header" class="text-5xl text-center my-5 font-bold"></h1>
     <div id="container">
@@ -44,71 +53,57 @@
     <li style="--i:6;">7</li>
     <li style="--i:7;">8</li> -->
 
-    <div id="tokenomics" class="tokenomics flex justify-center items-center lg:absolute top-10 right-20">
+    <div id="tokenomics" class="tokenomics hidden md:flex justify-center items-center lg:absolute top-10 right-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <label onmouseover="showTokenomics()" for="tokenomics" class="cursor-pointer">Tokenomics</label>
     </div>
 
-    <div id="overview" class="tokenomics flex justify-center items-center lg:absolute top-10 left-20">
+    <div id="overview" class="tokenomics hidden md:flex justify-center items-center lg:absolute top-10 left-20">
     <label onmouseover="showOverview()" for="overview" class="cursor-pointer">Overview</label>
     </div>
 
-    <div id="roadmap" class="tokenomics flex justify-center items-center lg:absolute bottom-10 left-20">
+    <div id="roadmap" class="tokenomics hidden md:flex justify-center items-center lg:absolute bottom-10 left-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <label onmouseover="showRoadmap()" for="roadmap" class="cursor-pointer">Roadmap</label>
     </div>
 
-    <div id="team" class="tokenomics flex justify-center items-center lg:absolute bottom-10 right-20">
+    <div id="team" class="tokenomics hidden md:flex justify-center items-center lg:absolute bottom-10 right-20">
       <!-- <img class="w-60" src="images/pngwing.com.png" alt=""> -->
     <!-- <p class="absolute right-14 cursor-pointer">Team</p> -->
     <label onmouseover="showTeam()" for="my-modal-5" class="cursor-pointer">Team</label>
     </div>
   </div>
 
-  <footer class="w-full flex justify-center items-center gap-5">
+
+
+  <footer class="w-full hidden md:flex justify-center items-center gap-5">
     <a href="https://t.me/StakeNChillChat" target="_blank"><img class="w-8" src="images/telegram-logo-944.png" alt=""></a>
     <a href="https://www.dextools.io/app/bsc/pair-explorer/0x1C2e2183fc39eBf24A617622dFa43119f01e3Be1" target="_blank"><img class="w-8" src="images/dextools.svg" alt=""></a>
     <a href="https://pancakeswap.finance/swap?outputCurrency=0x2D685b00E649510C75918506F4a3618A14cdB48f" target="_blank"><img class="w-8" src="images/bunny-color.png" alt=""></a>
+    <a href=""><img src="images/" alt=""></a>
   </footer>
+
+    <div class="btm-nav md:hidden divide-x-2 text-xs">
+  <button id="overview-mbl" class="text-primary">
+    Overview
+  </button>
+  <button id="tokenomics-mbl" class="text-primary active">
+    Tokenomics
+  </button>
+  <button id="roadmap-mbl" class="text-primary active">
+    Roadmap
+  </button>
+  <button id="team-mbl" class="text-primary">
+    Developer
+  </button>
+</div>
 
   <!-- modal -->
 
   <!-- The button to open modal -->
 
 
-<!-- Put this part before </body>
-<!-- tokenomics modal  -->
-<input type="checkbox" class="modal-toggle" />
-<label for="tokenomics" class="modal cursor-pointer">
-  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
-    <img class="w-full p-10" src="images/crab_PNG45.png" alt="">
-  </label>
-</label>
 
-<!-- Overview modal  -->
-  <input type="checkbox"  class="modal-toggle" />
-<label for="overview" class="modal cursor-pointer">
-  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
-    <img class="w-full p-10" src="images/umbrella_PNG69214.png" alt="">
-  </label>
-</label>
-
-<!-- roadmap modal  -->
-
-  <input type="checkbox" class="modal-toggle" />
-<label for="roadmap" class="modal cursor-pointer">
-  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
-    <img class="w-full p-10" src="images/beach_PNG3.png" alt="">
-  </label>
-</label>
-
-<!-- team modal  -->
-<input type="checkbox" class="modal-toggle" />
-<label for="team" class="modal cursor-pointer">
-  <label class="modal-box relative max-w-[500px] max-h-[500px] flex items-center glass rounded-full p-5" for="">
-    <img class="w-full p-10" src="images/1_5035376983035347618.png" alt="">
-  </label>
-</label>
   <script src="main.js"></script>
 </body>
 </html>
