@@ -88,9 +88,9 @@ document.getElementById("roadmap-mbl").addEventListener("click", () => {
   imgContainer.setAttribute("src", "images/beach_PNG3.png");
   // header.innerText = "Roadmap";
   container.innerHTML = `
-  <section id="roadmap" class="mt-[100px] w-9/12 mx-auto">
-    <div class="flex w-full mt-10">
-    <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Coming Soon...</div>
+  <section id="roadmap" class="w-9/12 mx-auto">
+    <div class="flex w-full">
+    <div class="p-5">Coming Soon...</div>
     </div>
     </section>
   `;
@@ -200,9 +200,9 @@ const showRoadmap = () => {
   imgContainer.setAttribute("src", "images/umbrella_PNG69214.png");
   // header.innerText = "Roadmap";
   container.innerHTML = `
-  <section id="roadmap" class="mt-[100px] w-9/12 mx-auto">
-    <div class="flex w-full mt-10">
-    <div class="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Coming Soon...</div>
+  <section id="roadmap" class="w-9/12 mx-auto">
+    <div class="flex w-full">
+    <div class="p-5">Coming Soon...</div>
     </div>
     </section>
   `;
