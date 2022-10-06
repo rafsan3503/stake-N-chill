@@ -214,7 +214,7 @@ const showTeam = () => {
   // header.innerText = "Team";
   container.innerHTML = `
   <section>
-        <div class='w-96 mx-auto'>
+        <div class='w-1/3 mx-auto'>
             <div class="card border-violet-500 bg-transparent shadow-2xl border backdrop-blur-sm">
                         <figure><img class="w-1/2 border-2 border-violet-500 rounded-full shadow-lg mt-4" src="images/chase.jpg"
                                 alt="Shoes" /></figure>
